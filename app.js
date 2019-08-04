@@ -16,8 +16,14 @@ const   gameDiv    = document.getElementById('game'),
         minNumSpan = document.getElementById('min-num'),
         maxNumSpan = document.getElementById('max-num'),
         guessInput = document.getElementById('guess-input'),
-        guessBtrn  = document.getElementById('guess-button'),
+        guessBtn  = document.getElementById('guess-button'),
         messagePara= document.getElementById('message');
 
 minNumSpan.textContent = min;
 maxNumSpan.textContent = max;
+
+function guessSubmitEvent(e){
+
+}
+
+guessBtn.addEventListener(MouseEvents.Click(), guessSubmitEvent)
